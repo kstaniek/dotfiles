@@ -12,4 +12,4 @@ jobs:
         # Create profile folders home-manager expects to exist.
         nix profile list
         # Move the nix.conf file created by magic-nix-cache rather than fail.
-        nix run home-manager/master -- switch --flake .#apearwin-ci -b backup
+        nix run home-manager/master -- switch --flake .#klstanie-ci -b backup
