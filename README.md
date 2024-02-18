@@ -12,22 +12,22 @@ Heavely inspired by [dotfiles by Alex Pearce](https://github.com/alexpearce/dotf
 Install [Nix][nix] with Nix Flake support enabled, for example by using the [Determinate Systems installer][nix-installer].
 You should be able to run the `nix flake` command in a shell.
 
-Next, clone this repository. We'll use `~/Code/dotfiles`.
+Next, clone this repository.
 
 ```shell
-$ git clone git@github.com:alexpearce/dotfiles.git ~/Code/dotfiles
+$ git clone git@github.com:klstanie/dotfiles.git ~/workspace/dotfiles
 ```
 
 The home-manager profile can then be built and activated:
 
 ```shell
-$ nix run home-manager/master -- switch --flake ~/Code/dotfiles#apearwin
+$ nix run home-manager/master -- switch --flake ~/workspace/dotfiles#klstanie
 ```
 
 To update dependencies:
 
 ```shell
-$ nix flake update ~/Code/dotfiles
+$ nix flake update ~/workspace/dotfiles
 ```
 
 [nix]: https://nixos.org/
